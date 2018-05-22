@@ -210,7 +210,7 @@ class Ventana(gtk.Window):
             self.vista_previa = Chrome.Browser(url, 200, 200)
             self.proyector  = Chrome.Window(url)
         else:
-            url = 'file:///home/danielypamela/Python/Proyeccion/local/proyeccion.html'
+            url = 'file:///home/daniel/Python/Proyeccion/local/proyeccion.html'
             self.vista_previa = Chrome.IFrame(url, 200, 200)
             self.proyector = Chrome.Window(url)
         frame.add(self.vista_previa)

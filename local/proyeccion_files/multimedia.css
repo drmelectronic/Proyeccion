@@ -10,11 +10,12 @@ div.item{
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  position: absolute;
+  width: 100%;
 }
 div.inactivo{
   color: rgba(0, 0, 0, 0);
   text-shadow: none;
+  display: none;
 }
 div.insertado{
   color: rgba(0, 0, 0, 0);
@@ -23,8 +24,6 @@ div.insertado{
 div.activo{
   color: white;
   text-shadow: 1px -1px 5px black, 1px 1px 5px black, -1px -1px 5px black, -1px 1px 5px black;
-  overflow-y: scroll;
-  height: 100%;
 }
 
 span {
@@ -34,10 +33,11 @@ span {
   background: none;
   text-shadow: inherit;
   transition: all .8s ease-in-out;
+  font-weight: bold;
 }
 
 body{
-    font-family: Bitter, Arial, sans;
+    font-family: Droid Serif;
     background-color: black;
     /*background-image: url(http://wallmeta.com/wp-content/uploads/2015/01/Colorful-Backgrounds-High-Quality-Photo.jpg);*/
     background-repeat: round;
@@ -49,15 +49,12 @@ body{
     transition: all 0.8s ease-in-out;
 }
 
-header{
-  background-image: url(../../images/fondos/worship.jpg);
-  background-size: cover;
-  transition: all 1s ease-in-out;
+body.biblia{
+  background-image: url(../../images/fondos/biblia.jpg);
 }
 
 body.cancion{
   background-image: url(../../images/fondos/worship.jpg);
-  background-size: cover;
 }
 
 @media all and (min-width: 1300px) {
